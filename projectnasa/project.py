@@ -6,16 +6,15 @@ import random
 
 pygame.init()
 
-# Constants
+
 WIDTH, HEIGHT = 1280, 720
 CENTER_X, CENTER_Y = WIDTH // 2, HEIGHT // 2
 SUN_RADIUS = 20
 ASTEROID_RADIUS = 15
 ASTEROID_SPEED = 2
 FONT_SIZE = 36
-ASTEROID_SPAWN_TIME = 1200  # Time in milliseconds between asteroid spawns
+ASTEROID_SPAWN_TIME = 1200 
 
-# Planet data
 PLANET_DATA = {
     "Mercury": {"color": (169, 169, 169), "radius": 5, "speed": 0.04787, "distance": 40},
     "Venus": {"color": (255, 228, 196), "radius": 7, "speed": 0.03502, "distance": 75},
