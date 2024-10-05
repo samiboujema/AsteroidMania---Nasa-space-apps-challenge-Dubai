@@ -27,7 +27,7 @@ PLANET_DATA = {
     "Neptune": {"color": (0, 0, 128), "radius": 8, "speed": 0.00543, "distance": 600},
 }
 
-# Initialize variables
+
 planet_angles = {planet: 0 for planet in PLANET_DATA.keys()}
 button_rect = pygame.Rect(CENTER_X - 50, HEIGHT - 100, 100, 50)
 moving = False
@@ -36,7 +36,7 @@ asteroids = []
 last_spawn_time = pygame.time.get_ticks()
 score = 0
 
-# Load images
+
 BACKGROUND_IMAGE_PATH = "images/pexels-francesco-ungaro-998641.jpg" 
 background_image = pygame.transform.scale(pygame.image.load(BACKGROUND_IMAGE_PATH), (WIDTH, HEIGHT))
 crosshair_img = pygame.transform.scale(pygame.image.load("images/image-removebg-preview.png"), (40, 40))
@@ -173,6 +173,6 @@ while running:
     pygame.display.flip()
     pygame.time.delay(30)
 
-# Quit Pygame
+
 pygame.quit()
 sys.exit()
